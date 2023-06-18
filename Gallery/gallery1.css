@@ -1,0 +1,370 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: #E9E9E9;
+    color: #333;
+    font-family: "Lucida handwriting", "Snell Roundhand", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.amp {
+    font-family: Garamond, Baskerville, Georgia, serif !important;
+    font-style: italic;
+    font-weight: normal;
+    border: none;
+}
+
+img.polaroid {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 10px 20px 10px;
+    width: 150px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    z-index: 2;
+    font-size: 0.7em;
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+}
+
+img.polaroid:focus,
+img.polaroid:hover,
+img.polaroid:active {
+    z-index: 999;
+    border-color: #6A6A6A;
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.polaroid img {
+    margin: 0 0 15px;
+    width: 150px;
+    height: 150px;
+}
+
+img {
+    border: none;
+    display: block;
+}
+
+.box:hover {
+    background-color: grey;
+    transition: 0.5s;
+    margin: auto;
+    width: 95%
+}
+
+
+.photo-album {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 450px;
+    margin-top: 5em;
+    min-width: 800px;
+    max-width: 100%;
+}
+
+.photo-album .polaroid {
+    position: absolute;
+}
+
+.photo-album h1 {
+    position: absolute;
+    z-index: 5;
+    top: 150px;
+    text-align: center;
+    width: 100%;
+    line-height: 1.9;
+}
+
+.photo-album h1 span {
+    background-color: white;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    padding: 0.4em 0.8em 0.3em 0.8em;
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border: 1px solid #6A6A6A;
+}
+
+.photo-album .small {
+    width: 100px;
+    padding: 6px 6px 12px 6px;
+    font-size: 0.6em;
+}
+
+.photo-album .small img {
+    width: 100px;
+    height: 100px;
+}
+
+.photo-album .medium {
+    width: 200px;
+    padding: 13px 13px 26px 13px;
+    font-size: 0.8em;
+}
+
+.photo-album .medium img {
+    width: 200px;
+    height: 200px;
+}
+
+.photo-album .large {
+    width: 300px;
+    padding: 20px 20px 30px 20px;
+    font-size: 1em;
+}
+
+.photo-album .large img {
+    width: 300px;
+    height: 300px;
+}
+
+.photo-album .img1 {
+    bottom: 10px;
+    right: 365px;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+
+.photo-album .img2 {
+    top: 50px;
+    right: 80px;
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+}
+
+.photo-album .img3 {
+    left: 300px;
+    top: 0;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+.photo-album .img4 {
+    top: 10px;
+    left: 495px;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
+.photo-album .img5 {
+    bottom: 0;
+    right: 200px;
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    transform: rotate(1deg);
+}
+
+.photo-album .img6 {
+    bottom: 10px;
+    right: 156px;
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    transform: rotate(6deg);
+}
+
+.photo-album .img7 {
+    bottom: 20px;
+    left: 300px;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.photo-album .img8 {
+    bottom: -20px;
+    left: 700px;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+
+.photo-album .img9 {
+    bottom: 150px;
+    left: 400px;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
+.photo-album .img10 {
+    top: 0;
+    left: 20px;
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    transform: rotate(8deg);
+}
+
+.photo-album .img11 {
+    top: 10px;
+    right: 200px;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+
+.photo-album .img12 {
+    top: 0;
+    left: 680px;
+    -webkit-transform: rotate(18deg);
+    -moz-transform: rotate(18deg);
+    transform: rotate(18deg);
+}
+
+.photo-album .img13 {
+    bottom: 20px;
+    right: 630px;
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    transform: rotate(4deg);
+}
+
+.photo-album .img14 {
+    top: 90px;
+    left: 430px;
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+.photo-album .img15 {
+    right: 300px;
+    top: 20px;
+    -webkit-transform: rotate(-18deg);
+    -moz-transform: rotate(-18deg);
+    transform: rotate(-18deg);
+}
+
+.photo-album .img16 {
+    bottom: 150px;
+    left: 500px;
+    -webkit-transform: rotate(+4deg);
+    -moz-transform: rotate(+4deg);
+    transform: rotate(+4deg);
+}
+
+.photo-album .img17 {
+    right: 400px;
+    top: 180px;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+
+.photo-album .img18 {
+    right: 470px;
+    top: 20px;
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+}
+
+.photo-album .img19 {
+    left: 176px;
+    top: 20px;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+
+.photo-album .img20 {
+    left: 176px;
+    top: 20px;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+
+.photo-album .img21 {
+    left: 220px;
+    top: 150px;
+    -webkit-transform: rotate(+4deg);
+    -moz-transform: rotate(+4deg);
+    transform: rotate(+4deg);
+}
+
+.photo-album .img22 {
+    right: 276px;
+    top: 10px;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
+.photo-album .img23 {
+    left: 376px;
+    top: 20px;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+
+.photo-album .img24 {
+    right: 100px;
+    top: 150px;
+    -webkit-transform: rotate(+7deg);
+    -moz-transform: rotate(+7deg);
+    transform: rotate(+7deg);
+}
+
+.photo-album .img25 {
+    left: 600px;
+    top: 120px;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+.photo-album .img26 {
+    left: 960px;
+    top: 150px;
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    transform: rotate(8deg);
+}
+
+.photo-album .img27 {
+    left: 476px;
+    top: 20px;
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+}
+
+.photo-album .img28 {
+    left: 476px;
+    top: 80px;
+    -webkit-transform: rotate(18deg);
+    -moz-transform: rotate(18deg);
+    transform: rotate(18deg);
+}
+
+img:hover,
+img:focus {
+    z-index: 5;
+}
+
+.box:hover .photo-album .img1{
+    top: 10px;
+    left: 10px;
+}
